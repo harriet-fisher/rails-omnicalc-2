@@ -3,7 +3,7 @@ class DivisionController < ApplicationController
     render({ :template => "division_templates/division_form" })
   end
 
-  def divide_these
+  def divide
     @first_number = params.fetch("first_num")
     @second_number = params.fetch("second_num").to_f
 
